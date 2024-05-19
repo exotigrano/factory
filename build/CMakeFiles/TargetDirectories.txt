@@ -1,0 +1,3 @@
+/home/steve-kameron/Загрузки/DesignPattern/factory/build/CMakeFiles/factory.dir
+/home/steve-kameron/Загрузки/DesignPattern/factory/build/CMakeFiles/edit_cache.dir
+/home/steve-kameron/Загрузки/DesignPattern/factory/build/CMakeFiles/rebuild_cache.dir
