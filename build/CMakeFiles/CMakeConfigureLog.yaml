@@ -527,3 +527,42 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake:39 (find_dependency)"
+      - "/usr/share/cmake-3.28/Modules/FindGTest.cmake:194 (find_package)"
+      - "CMakeLists.txt:9 (find_package)"
+    directories:
+      source: "/home/steve-kameron/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/DesignPattern/factory/build/CMakeFiles/CMakeScratch/TryCompile-ECaG6m"
+      binary: "/home/steve-kameron/\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0438/DesignPattern/factory/build/CMakeFiles/CMakeScratch/TryCompile-ECaG6m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/steve-kameron/Загрузки/DesignPattern/factory/build/CMakeFiles/CMakeScratch/TryCompile-ECaG6m'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_26eba/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_26eba.dir/build.make CMakeFiles/cmTC_26eba.dir/build
+        gmake[1]: вход в каталог «/home/steve-kameron/Загрузки/DesignPattern/factory/build/CMakeFiles/CMakeScratch/TryCompile-ECaG6m»
+        Building C object CMakeFiles/cmTC_26eba.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_26eba.dir/src.c.o -c /home/steve-kameron/Загрузки/DesignPattern/factory/build/CMakeFiles/CMakeScratch/TryCompile-ECaG6m/src.c
+        Linking C executable cmTC_26eba
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26eba.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_26eba.dir/src.c.o -o cmTC_26eba 
+        gmake[1]: выход из каталога «/home/steve-kameron/Загрузки/DesignPattern/factory/build/CMakeFiles/CMakeScratch/TryCompile-ECaG6m»
+        
+      exitCode: 0
+...

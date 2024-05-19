@@ -1,13 +1,23 @@
 cmake_minimum_required(VERSION 3.10)
+
+# Project name
 project(factory)
 
-set(CMAKE_CXX_STANDARD 14)
+# Set C++ standard
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Include directories
+include_directories(${PROJECT_SOURCE_DIR})
 
-set(SOURCE_FILES
-    factory.cpp
+# Add source files
+set(SOURCES
+      factory.cpp
 )
 
-add_executable(factory ${SOURCE_FILES})
+# Add executable
+add_executable(factory ${SOURCES})
 
-target_include_directories(factory PUBLIC ${PROJECT_SOURCE_DIR})
+enable_testing()
+
+add_subdirectory(tests)
