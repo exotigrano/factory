@@ -48,4 +48,4 @@ jobs:
         path: build/tests/runTests
 
     - name: run Test
-    run: ./build/tests/runTests
+      run: ./build/tests/runTests
